@@ -6,6 +6,10 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            Ballena ballena1 = new Ballena("Migaloo");
+            Caballo caballo1 = new Caballo("Bucéfalo");
+            ballena1.Nadar();
+            Console.WriteLine("El caballo tiene " + caballo1.CantidadPatas() + " patas");
         }
     }
 
