@@ -9,6 +9,11 @@ namespace Interfaces
         }
     }
 
+    interface ICantidadPatas
+    {
+        int CantidadPatas();
+    }
+
     class Mamiferos
     {
         public Mamiferos(String nombreMamifero)
