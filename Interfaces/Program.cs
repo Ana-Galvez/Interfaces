@@ -35,7 +35,7 @@ namespace Interfaces
         }
     }
 
-    class Humano : Mamiferos
+    class Humano : Mamiferos, ICantidadPatas
     {
         public Humano(String nombreHumano) : base(nombreHumano)
         {
@@ -48,7 +48,7 @@ namespace Interfaces
         }
     }
 
-    class Caballo : Mamiferos
+    class Caballo : Mamiferos, ICantidadPatas
     {
         public Caballo(String nombreCaballo) : base(nombreCaballo)
         {
