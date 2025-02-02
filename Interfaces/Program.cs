@@ -46,6 +46,11 @@ namespace Interfaces
         {
             Console.WriteLine("El humano puede pensar");
         }
+
+        public int CantidadPatas()
+        {
+            return 2;
+        }
     }
 
     class Caballo : Mamiferos, ICantidadPatas
@@ -58,6 +63,11 @@ namespace Interfaces
         public void Galopar()
         {
             Console.WriteLine("El caballo puede galopar");
+        }
+
+        public int CantidadPatas()
+        {
+            return 4;
         }
 
     }
