@@ -8,8 +8,11 @@ namespace Interfaces
         {
             Ballena ballena1 = new Ballena("Migaloo");
             Caballo caballo1 = new Caballo("Bucéfalo");
+            ICantidadPatas ICPcaballo1 = caballo1;
+            ISaltoConPatas ISCPcaballo1 = caballo1;
             ballena1.Nadar();
-            Console.WriteLine("El caballo tiene " + caballo1.CantidadPatas() + " patas");
+            Console.WriteLine("El caballo tiene " + ICPcaballo1.CantidadPatas() + " patas");
+            Console.WriteLine("El caballo salta con " + ISCPcaballo1.CantidadPatas() + " patas");
         }
     }
 
