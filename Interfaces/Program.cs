@@ -82,9 +82,14 @@ namespace Interfaces
             Console.WriteLine("El caballo puede galopar");
         }
 
-        public int CantidadPatas()
+        int ICantidadPatas.CantidadPatas()
         {
             return 4;
+        }
+
+        int ISaltoConPatas.CantidadPatas()
+        {
+            return 2;
         }
 
         public string TipoDeporte()
