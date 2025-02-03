@@ -20,8 +20,15 @@ namespace Interfaces
 
     interface IAnimalesYDeportes
     {
-        String TipoDeporte();
+        string TipoDeporte();
         Boolean esOlimpico();
+    }
+
+    interface ISaltoConPatas
+    {
+     
+        // mismo método que ICantidadPatas
+        int CantidadPatas();
     }
 
     class Mamiferos
@@ -63,7 +70,7 @@ namespace Interfaces
         }
     }
 
-    class Caballo : Mamiferos, ICantidadPatas,IAnimalesYDeportes
+    class Caballo : Mamiferos, ICantidadPatas,IAnimalesYDeportes,ISaltoConPatas
     {
         public Caballo(String nombreCaballo) : base(nombreCaballo)
         {
