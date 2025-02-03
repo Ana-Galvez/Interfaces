@@ -18,6 +18,12 @@ namespace Interfaces
         int CantidadPatas();
     }
 
+    interface IAnimalesYDeportes
+    {
+        String TipoDeporte();
+        Boolean esOlimpico();
+    }
+
     class Mamiferos
     {
         public Mamiferos(String nombreMamifero)
@@ -57,7 +63,7 @@ namespace Interfaces
         }
     }
 
-    class Caballo : Mamiferos, ICantidadPatas
+    class Caballo : Mamiferos, ICantidadPatas,IAnimalesYDeportes
     {
         public Caballo(String nombreCaballo) : base(nombreCaballo)
         {
@@ -72,6 +78,16 @@ namespace Interfaces
         public int CantidadPatas()
         {
             return 4;
+        }
+
+        public string TipoDeporte()
+        {
+            return "Hípica";
+        }
+
+        public Boolean esOlimpico()
+        {
+            return true;
         }
 
     }
